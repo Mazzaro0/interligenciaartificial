@@ -1,0 +1,105 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "Olá",
+        "Oi",
+        "Bom dia",
+        "Boa tarde",
+        "Boa noite",
+        "E aí",
+        "Oi, tudo bem?"
+      ],
+      "responses": [
+        "Olá! Como posso ajudar você hoje?",
+        "Oi! Precisa de ajuda com algo? Estou à disposição.",
+        "Oi, tudo bem? Em que posso te ajudar?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Tchau",
+        "Até logo",
+        "Obrigado",
+        "Valeu",
+        "Até mais",
+        "Nos vemos"
+      ],
+      "responses": [
+        "Até mais! Se precisar de algo, estarei por aqui.",
+        "Até logo! Fique à vontade para voltar quando precisar.",
+        "Foi um prazer ajudar! Até mais!"
+      ]
+    },
+    {
+      "tag": "info_pipe",
+      "patterns": [
+        "O que é o projeto PIPE?",
+        "Me fale sobre o PIPE",
+        "Qual o objetivo do projeto PIPE?",
+        "O que é o PIPE da FAPESP?",
+        "Qual a finalidade do programa PIPE?"
+      ],
+      "responses": [
+        "O programa PIPE (Pesquisa Inovativa em Pequenas Empresas) da FAPESP visa apoiar a pesquisa e o desenvolvimento de novas tecnologias em pequenas empresas no Brasil.",
+        "O projeto PIPE tem como objetivo apoiar a pesquisa inovadora em pequenas empresas que buscam desenvolver novos produtos ou processos."
+      ]
+    },
+    {
+      "tag": "submissao_projeto",
+      "patterns": [
+        "Como submeter um projeto PIPE?",
+        "Quais são os passos para a submissão do projeto PIPE?",
+        "Onde envio meu projeto PIPE?",
+        "Como faço para submeter meu projeto à FAPESP?",
+        "Qual o processo para enviar um projeto ao PIPE?"
+      ],
+      "responses": [
+        "Você pode submeter seu projeto diretamente no site da FAPESP. Acesse: https://fapesp.br/pipe/ e siga as instruções.",
+        "Para submeter seu projeto ao PIPE, acesse o site da FAPESP, preencha o formulário de inscrição e envie sua proposta conforme os requisitos do edital."
+      ]
+    },
+    {
+      "tag": "requisitos",
+      "patterns": [
+        "Quais são os requisitos para participar do PIPE?",
+        "Quem pode se inscrever no PIPE?",
+        "Quais são as condições para a aprovação de um projeto no PIPE?",
+        "O que é necessário para que meu projeto seja aprovado no PIPE?",
+        "Quais são as exigências para inscrição no PIPE?"
+      ],
+      "responses": [
+        "Para participar, a empresa deve ser uma micro ou pequena empresa sediada no Brasil e atender aos critérios descritos no edital da FAPESP.",
+        "A empresa deve ter um projeto inovador, com potencial de gerar um novo produto ou processo, e estar de acordo com os critérios estabelecidos pela FAPESP."
+      ]
+    },
+    {
+      "tag": "processo_selecao",
+      "patterns": [
+        "Como funciona o processo seletivo do PIPE?",
+        "Qual é o processo de avaliação dos projetos no PIPE?",
+        "O que acontece depois que submeto meu projeto?",
+        "Como o PIPE avalia as propostas?"
+      ],
+      "responses": [
+        "Após a submissão, o projeto é avaliado pela FAPESP e por uma comissão especializada. A análise leva em consideração a inovação, o potencial de mercado e a viabilidade técnica do projeto.",
+        "A FAPESP realiza uma avaliação detalhada do projeto, levando em conta critérios como inovação tecnológica, impacto no mercado e a capacidade da empresa em executar a pesquisa."
+      ]
+    },
+    {
+      "tag": "apoio_financeiro",
+      "patterns": [
+        "O PIPE oferece financiamento para os projetos?",
+        "Quais são as condições de financiamento do PIPE?",
+        "Como funciona o apoio financeiro do PIPE?",
+        "O PIPE financia as empresas que participam?"
+      ],
+      "responses": [
+        "Sim, o PIPE oferece apoio financeiro para os projetos aprovados, com o objetivo de financiar a pesquisa e o desenvolvimento de novos produtos ou processos.",
+        "O programa oferece diferentes modalidades de financiamento, dependendo da fase do projeto, para ajudar as empresas a executar a pesquisa e desenvolvimento de suas inovações."
+      ]
+    }
+  ]
+}
