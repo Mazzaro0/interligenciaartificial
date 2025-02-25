@@ -1,0 +1,79 @@
+% Definindo que as cláusulas de casal podem estar em lugares diferentes no arquivo
+:- discontiguous casal/2.
+
+% Casais (quem é casado com quem)
+casal(pietro, antonita).
+casal(joao, desconhecido).
+casal(clara, desconhecido).
+casal(francisco, fabiana).
+casal(helena, mario).
+casal(pietro, francisca).
+casal(enzo, antonia).
+casal(jacynto, claudia).
+casal(luzia, pablo).
+
+% Filhos (quem é filho de quem)
+filho(joao, pietro).
+filho(joao, antonita).
+filho(clara, pietro).
+filho(clara, antonita).
+filho(francisco, pietro).
+filho(francisco, antonita).
+filho(valeria, pietro).
+filho(valeria, antonita).
+filho(ana, pietro).
+filho(ana, antonita).
+filho(helena, ana).
+filho(joana, ana).
+filho(mario, joao).
+filho(carlos, helena).
+filho(pietro, clara).
+filho(enzo, clara).
+filho(francisco, jacynto).
+filho(francisco, claudia).
+
+% Gênero das pessoas
+homem(pietro).
+homem(joao).
+homem(francisco).
+homem(mario).
+homem(pietro).
+homem(enzo).
+homem(jacynto).
+homem(pablo).
+
+mulher(antonita).
+mulher(clara).
+mulher(valeria).
+mulher(ana).
+mulher(helena).
+mulher(joana).
+mulher(francisca).
+mulher(antonia).
+mulher(claudia).
+mulher(luzia).
+
+% Definindo avô (masculino) e avó (feminino)
+avo(X, Y) :- filho(Y, Z), filho(Z, X), homem(Z).  % Avô
+ava(X, Y) :- filho(Y, Z), filho(Z, X), mulher(Z).  % Avó
+
+% Definindo tio ou tia
+tio_tia(X, Y) :- filho(Y, Z), (irmao(Z, X); irma(Z, X)).  % Tio ou tia
+
+% Definindo primo ou prima
+primo_prima(X, Y) :- filho(X, Z1), filho(Y, Z2), irmao(Z1, Z2).  % Primo ou prima
+
+% Definindo irmão e irmã
+irmao(X, Y) :- filho(X, Z), filho(Y, Z), X \= Y, homem(X).  % Irmão
+irma(X, Y) :- filho(X, Z), filho(Y, Z), X \= Y, mulher(X).  % Irmã
+
+% Definindo descendente (alguém que é descendente de outra pessoa)
+descendente(X, Y) :- filho(X, Y).
+descendente(X, Y) :- filho(X, Z), descendente(Z, Y).
+
+% Definindo ascendente (alguém que é ascendente de outra pessoa)
+ascendente(X, Y) :- filho(Y, X).
+ascendente(X, Y) :- filho(Z, Y), ascendente(X, Z).
+
+% Casamento entre duas pessoas (casal é simétrico)
+casal(X, Y) :- casal(Y, X).  % Caso o casal seja invertido
