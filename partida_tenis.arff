@@ -1,0 +1,23 @@
+@RELATION partida_tenis
+
+@ATTRIBUTE clima {Ensolarado,Nublado,Chuvoso}
+@ATTRIBUTE temperatura {Alta,Moderada,Baixa}
+@ATTRIBUTE umidade {Alta,Baixa}
+@ATTRIBUTE vento {Forte,Fraco}
+@ATTRIBUTE jogar {Sim,Não}
+
+@DATA
+Ensolarado,Alta,Alta,Fraco,Não
+Ensolarado,Alta,Alta,Forte,Não
+Nublado,Alta,Alta,Fraco,Sim
+Chuvoso,Moderada,Alta,Fraco,Sim
+Chuvoso,Baixa,Baixa,Fraco,Sim
+Chuvoso,Baixa,Baixa,Forte,Não
+Nublado,Baixa,Baixa,Forte,Sim
+Ensolarado,Moderada,Alta,Fraco,Não
+Ensolarado,Baixa,Baixa,Fraco,Sim
+Chuvoso,Moderada,Baixa,Fraco,Sim
+Ensolarado,Moderada,Baixa,Forte,Sim
+Nublado,Moderada,Alta,Forte,Sim
+Nublado,Alta,Baixa,Fraco,Sim
+Chuvoso,Moderada,Alta,Forte,Não
