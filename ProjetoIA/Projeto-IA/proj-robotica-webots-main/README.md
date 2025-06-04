@@ -10,9 +10,8 @@ O objetivo do projeto é programar um robô no **Webots** que:
 
 ## 👥 Grupo:
 
-- **Luan Petroucic Moreno**  22.122.076-7
-- **Vinicius Henrique Silva** 22.122.063-5
-- **Caue Jacomini Zanatti**  22.122.024-7
+- **Giulliano Mazzaro de Camargo** R.A 22.121.024-8
+- **Pedro Henrique Almeida Leite** R.A 22.221.003-1
 
 
-🔗 Link para o vídeo de demonstração: (https://www.youtube.com/watch?v=xSQua93ecLg)
+🔗 Link para o vídeo de demonstração: ()
